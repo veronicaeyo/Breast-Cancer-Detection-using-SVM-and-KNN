@@ -3,64 +3,35 @@
 # Breast cancer prediction Project
 
  ## Business Problem  
-An end to end modelling to help detect breast canncer in Patients.
+An end to end modelling to help detect breast cancer in patients.
  
  ## The dataset
+Features are computed from a digitized image of a fine needle aspirate (FNA) of a breast mass. They describe characteristics of the cell nuclei present in the image.
+n the 3-dimensional space is that described in: [K. P. Bennett and O. L. Mangasarian: "Robust Linear Programming Discrimination of Two Linearly Inseparable Sets", Optimization Methods and Software 1, 1992, 23-34].
 
-The dataset contains the Donor records collected from a Red Cross. 
+Attribute Information:
 
-The "DONOR_IND" column is a target variable which has Categorical entries (Y or N).
+1) ID number
+2) Diagnosis (M = malignant, B = benign)
+3-32)
 
-ID - the unique identifier for each constituent
+Ten real-valued features are computed for each cell nucleus:
 
-ZIPCODE - the ZIP code for the constituent
-
-AGE - the age of the constituent
-
-MARITAL_STATUS - the marital status of the constituent
-
-GENDER-the gender of the constituent
-
-MEMBERSHIP_IND- a binary flag indicating if a constituent is a radio member
-
-ALUMNUS_IND- a binary flag indicating if a constituent is an alumnus
-
-PARENT_IND- a binary flag indicating if a constituent is a parent
-
-HAS_INVOLVEMENT_IND- a binary flag indicating if a constituent has an involvement code
-
-WEALTH_RATING - a descriptive factor with the results of a wealth screen
-
-DEGREE_LEVEL - the degree level of the constituent if they are an alumnus
-
-PREF_ADDRESS_TYPE - the preferred address type for the constituent
-
-EMAIL_PRESENT_IND - a binary flag indicating if an email address is present
-
-CON_YEARS - consecutive giving years
-
-PrevFYGiving - the fiscal year giving for the previous fiscal year
-
-PrevFY1Giving - the fiscal year giving for the year before the previous fiscal year
-
-PrevFY2Giving - the fiscal year giving for two years before the previous fiscal year
-
-PrevFY3Giving - the fiscal year giving for three years before the previous fiscal year
-
-PrevFY4Giving - the fiscal year giving for four years before the previous fiscal year
-
-CurrFYGiving - the fiscal year giving for the current fiscal year
-
-TotalGiving - the total giving for the constituent
-
-DONOR_IND - a binary flag indicating if a constituent is a donor
-
-BIRTH_DATE - the birth date for the constituent
+a) radius (mean of distances from center to points on the perimeter)
+b) texture (standard deviation of gray-scale values)
+c) perimeter
+d) area
+e) smoothness (local variation in radius lengths)
+f) compactness (perimeter^2 / area - 1.0)
+g) concavity (severity of concave portions of the contour)
+h) concave points (number of concave portions of the contour)
+i) symmetry
+j) fractal dimension ("coastline approximation" - 1)
 
  
  ## Objective
  
-To develop a model that will predict Red cross Donors.
+To develop a model that will predict if the patien has benign cancer or a malignant one.
  
 ## Requirements 
 Libraries used - To succesfully run this Jupyter notebook the following libraries need to be installed.
@@ -70,38 +41,26 @@ Libraries used - To succesfully run this Jupyter notebook the following librarie
 ## Data Preprocessing
 Preprocessing work done on the data included:
 
-1. Outlier removal
 
-2. Label and one hot encoding for categorical data
 
-3. Handling of missing data by median imputation
-
-4. Replacing missing values  with a hard coded values like zero (eg 1 for yes, 0 for none)
-
+1. Handling of missing data by median imputation
 
 
 ## Models 
-1.Gradient Boosting Classifier
+1. Support Vector Machine
 
-2.Ada Boost Classifier
+2. K Nearest Neighbors
 
-3.Random Forest Classifier
-
-4.Naive Bayes
-
-5.K Nearest Neighbors
-
-6.Decision Tree Classifier
-
-7.Logistic Regression
 
 ## Results
 Performance Evaluation Metric used:
 
 1.F1 score
 
-2.AUC score
+2.Precision
 
-3.Training and test accuracy
+3. Recall
 
-4.Confusion matrix
+4. Support
+
+5. Confusion matrix
