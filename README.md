@@ -1,4 +1,4 @@
-# breast-cancer-detection-using-Support vector machine-and-K nearest neighbor Algorithm
+# breast cancer detection using SVM & KNN
 ![Breast Cancer detection](https://unsplash.com/photos/SJCalEw-1LM)
 # Breast cancer prediction Project
 
