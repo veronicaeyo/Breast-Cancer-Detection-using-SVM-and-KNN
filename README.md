@@ -1,5 +1,5 @@
-# breast-cancer-detection-using-SVM-and-KNN
-![Breast Cancer detection](https://www.istockphoto.com/photo/woman-in-pink-sweater-with-pink-ribbon-supporting-breast-cancer-awareness-campaign-gm1271793978-374264914?utm_source=unsplash&utm_medium=affiliate&utm_campaign=srp_photos_top&utm_content=https%3A%2F%2Funsplash.com%2Fs%2Fphotos%2Fbreast-cancer-potrait&utm_term=breast%20cancer%20potrait%3A%3A%3A)
+# breast-cancer-detection-using-Support vector machine-and-K nearest neighbor Algorithm
+![Breast Cancer detection](https://unsplash.com/photos/SJCalEw-1LM)
 # Breast cancer prediction Project
 
  ## Business Problem  
